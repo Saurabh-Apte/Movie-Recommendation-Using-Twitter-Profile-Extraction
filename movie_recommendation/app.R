@@ -88,10 +88,10 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-  consumer_key <- "CSD3OHNIl6I6MwEA60sP8RxdR"
-  consumer_secret <- "viqJ7U6fx1mTK1lncUmiEmr2I6GgFtHFw3RBak2FxkPyBhLM0Z"
-  access_token <- "906868440060780544-2DZe5qvsf6KSwhRMf1G2F5UmlcgA5i1"
-  access_secret <- "ij746DYFgXDDJDGLiOnOoLioD1qcWoKOoml9FsmuCnchi"
+  consumer_key <- ""
+  consumer_secret <- ""
+  access_token <- ""
+  access_secret <- ""
   setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
   token <- get("oauth_token", twitteR:::oauth_cache)
   token$cache()
